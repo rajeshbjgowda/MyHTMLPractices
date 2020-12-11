@@ -1,0 +1,73 @@
+<html>
+<body>
+<form action="default" target="_blank">
+<label for="cars"> choose a car</label>
+<select id="cars" name="cars">
+<option value="volvo">VOLVO </option>
+<option value="ford">FORD</option>
+<option  value="tata">TATA</option>
+</select>
+<input type="submit" value="submit">
+</form>
+<p>we can usw thw selected attribute to select the defualt value</p>
+<p>use the size valur in select element to visible the more options</p>
+<p> we use the multiple element to select the multiple options</p>
+<p>hold ctrl button and select the options</p>
+<form action="default" target="_blank">
+<label for="cars"> choose a car</label>
+<select id="cars" name="cars" size="3" multiple>
+<option value="volvo">VOLVO </option>
+<option value="ford" selected>FORD</option>
+<option  value="tata">TATA</option>
+<option  value="honda">honda</option>
+<option  value="fiat">fiat</option>
+<option  value="bmw">bmw</option>
+</select>
+<input type="submit" value="submit">
+</form>
+<p> we can use style sttribute to set the width and hegiht of the text area</p>
+<form>
+<textarea name="discription" rows="10" cols="50">
+give the dimformation about cars
+</textarea>
+<input type="submit" value="submit">
+</form>
+
+<button type="button" onclick="alert('Hello World!')">Click Me!</button>
+</br></br></br>
+
+<form>
+<fieldset>
+<legend> "car imformation"</legend>
+<select size="2" multiple>
+<option value="fiat"> fiat<option>
+<option value="tata"> tata</option>
+<option value="mahindra"> mahindra</option>
+</select>
+</fieldset>
+</form>
+</br></br></br>
+<p> datat list is a predefined options for input element and it is </br> user see the drop down list of the options </br> the id in datalist and list in input elemet must have the same value beacuse of connect the data list and inpout </p>
+</br></br></br>
+<form action="ww.com">
+<input list="browsers" name="browser"/>
+<datalist id="browsers">
+<option value="operA"/>
+<option value="safari"/>
+<option value="ucbrowser"/>
+</datalist>
+<input type="submit"/>
+</form>
+
+
+
+<form action="788" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+<input type="range" id="a" value="50" name="a">
+100
++
+<input type="number" id="b" value="50" name="b">
+=
+<output name="x" for="a b">
+</form>
+</body>
+</html>

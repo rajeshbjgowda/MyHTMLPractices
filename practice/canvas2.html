@@ -1,0 +1,51 @@
+<html>
+<body>
+<canvas id="raju" height="100" width="200" style="border:1px solid black"></canvas>
+<script>
+var c= document.getElementById("raju");
+var ctx=c.getContext("2d");
+ctx.moveTo(25,10);
+ctx.lineTo(100,200);
+ctx.stroke();
+</script>
+<canvas id="raj" height="100" width="200" style="border:1px solid black"></canvas>
+<script>
+var c=document.getElementById("raj");
+var ctx=c.getContext("2d");
+ctx.beginPath();
+ctx.arc(95,50,40,0,2*Math.PI);
+ctx.stroke();
+</script>
+<canvas id="ra" height="100" width="200" style="border:1px solid black"></canvas>
+<script>
+var c=document.getElementById("ra");
+var ctx=c.getContext("2d");
+//gradient creating
+var grd=ctx.createLinearGradient(0,0,200,0);
+grd.addColorStop(1,"blue");
+grd.addColorStop(0,"white");
+
+ctx.fillStyle=grd;
+ctx.fillRect(10,10,150,80);
+</script>
+<canvas id="aj" height="100" width="200" style="border:1px solid black"></canvas>
+<script>
+var c=document.getElementById("aj");
+var ctx=c.getContext("2d");
+ctx.font="10px,italic";
+ctx.fillText("therft",50,50);
+</script>
+<img id="scream" src="raju1.jpg" alt="The Scream" width="180" height="77" />
+<canvas id="ju" height="100" width="200" style="border:1px solid black"></canvas>
+<p><button onclick="myCanvas()">Try it</button></p>
+<script>
+function myCanvas(){
+var c = document.getElementById("ju");
+  var ctx = c.getContext("2d");
+  var img = document.getElementById("scream");
+  ctx.drawImage(img,10,1);
+}
+</script>
+
+</body>
+</html>

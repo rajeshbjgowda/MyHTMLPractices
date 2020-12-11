@@ -1,0 +1,96 @@
+
+Lenovo@DESKTOP-23OSG5C MINGW64 /d/Rajesh/New folder
+$ git clone https://github.com/rajeshbjgowda/MyHTMLPractices
+Cloning into 'MyHTMLPractices'...
+warning: You appear to have cloned an empty repository.
+
+Lenovo@DESKTOP-23OSG5C MINGW64 /d/Rajesh/New folder
+$ cd MyHTMLPractices/
+
+Lenovo@DESKTOP-23OSG5C MINGW64 /d/Rajesh/New folder/MyHTMLPractices (master)
+$ echo "MyHTMLPractices"  >> README.md
+
+Lenovo@DESKTOP-23OSG5C MINGW64 /d/Rajesh/New folder/MyHTMLPractices (master)
+$ git int
+git: 'int' is not a git command. See 'git --help'.
+
+The most similar command is
+        init
+
+Lenovo@DESKTOP-23OSG5C MINGW64 /d/Rajesh/New folder/MyHTMLPractices (master)
+$ git init
+Reinitialized existing Git repository in D:/Rajesh/New folder/MyHTMLPractices/.g
+it/
+
+Lenovo@DESKTOP-23OSG5C MINGW64 /d/Rajesh/New folder/MyHTMLPractices (master)
+$ git add README.md
+warning: LF will be replaced by CRLF in README.md.
+The file will have its original line endings in your working directory
+
+Lenovo@DESKTOP-23OSG5C MINGW64 /d/Rajesh/New folder/MyHTMLPractices (master)
+$ git commit -m "README file"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Lenovo@DESKTOP-23OSG5C.(none)')
+
+
+Lenovo@DESKTOP-23OSG5C MINGW64 /d/Rajesh/New folder/MyHTMLPractices (master)
+$ git config --global user.name "Rajesh B J"
+
+Lenovo@DESKTOP-23OSG5C MINGW64 /d/Rajesh/New folder/MyHTMLPractices (master)
+$ git config --global user.email "rajeshbjgowda@gmail.com"
+
+Lenovo@DESKTOP-23OSG5C MINGW64 /d/Rajesh/New folder/MyHTMLPractices (master)
+$ git commit -m "README file"
+[master (root-commit) 7d91cc7] README file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+Lenovo@DESKTOP-23OSG5C MINGW64 /d/Rajesh/New folder/MyHTMLPractices (master)
+$ git push
+fatal: unable to access 'https://github.com/rajeshbjgowda/MyHTMLPractices/': Cou
+ld not resolve host: github.com
+
+Lenovo@DESKTOP-23OSG5C MINGW64 /d/Rajesh/New folder/MyHTMLPractices (master)
+$ git push origin master
+fatal: unable to access 'https://github.com/rajeshbjgowda/MyHTMLPractices/': Could not reso
+lve host: github.com
+
+Lenovo@DESKTOP-23OSG5C MINGW64 /d/Rajesh/New folder/MyHTMLPractices (master)
+$ git config --global --unset https.proxy
+
+Lenovo@DESKTOP-23OSG5C MINGW64 /d/Rajesh/New folder/MyHTMLPractices (master)
+$ git push origin master
+fatal: unable to access 'https://github.com/rajeshbjgowda/MyHTMLPractices/': Could not reso
+lve host: github.com
+
+Lenovo@DESKTOP-23OSG5C MINGW64 /d/Rajesh/New folder/MyHTMLPractices (master)
+$ git config --global --unset http.proxy
+
+Lenovo@DESKTOP-23OSG5C MINGW64 /d/Rajesh/New folder/MyHTMLPractices (master)
+$ git push origin master
+fatal: unable to access 'https://github.com/rajeshbjgowda/MyHTMLPractices/': Could not reso
+lve host: github.com
+
+Lenovo@DESKTOP-23OSG5C MINGW64 /d/Rajesh/New folder/MyHTMLPractices (master)
+$ git push origin master
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 236 bytes | 236.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/rajeshbjgowda/MyHTMLPractices
+ * [new branch]      master -> master
+
+Lenovo@DESKTOP-23OSG5C MINGW64 /d/Rajesh/New folder/MyHTMLPractices (master)
+$
