@@ -1,0 +1,33 @@
+<html>
+<body>
+<canvas id="canvas" width="1000" height="1000"></canvas>
+<script>
+var c= document.getElementById("canvas");
+var ctx=c.getContext("2d");
+ctx.beginPath();
+ctx.moveTo(40,40);
+ctx.lineTo(80,40);
+ctx.lineTo(60,80);
+ctx.lineTo(40,40);
+ctx.fillStyle="red";
+ctx.fill();
+
+
+ctx.beginPath();
+ctx.moveTo(200,40);
+ctx.lineTo(170,80);
+ctx.lineTo(230,80);
+ctx.closePath();
+ctx.stroke();
+
+ctx.beginPath();
+ctx.rect(80,150,100,100);
+ctx.fillStyle="blue";
+ctx.fill();
+ctx.lineWidth=3;
+ctx.stroke();
+
+
+</script>
+</body>
+</html>
